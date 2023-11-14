@@ -53,18 +53,22 @@ const articulos = [
   </Navbar>
 
   <Container>
-    <div class="mx-4">
+    <main
+      class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
+    >
       {
         articulos.map((x) => (
-          <Article
-            link={x.link}
-            imagen={x.imagen}
-            titulo={x.titulo}
-            descripcion={x.descripcion}
-          />
+          <div class="flex justify-between px-32 mx-auto max-w-screen-xl">
+            <Article
+              link={x.link}
+              imagen={x.imagen}
+              titulo={x.titulo}
+              descripcion={x.descripcion}
+            />
+          </div>
         ))
       }
-    </div>
+    </main>
   </Container>
 
   <Footer
