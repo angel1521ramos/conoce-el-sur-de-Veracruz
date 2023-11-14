@@ -11,6 +11,7 @@ const imagen =
   link = "https://www.facebook.com/profile.php?id=100092898635950",
   nombre = "Conoce el sur de veracruz";
 const articulos = await Astro.glob("./posts/*.md");
+articulos.reverse();
 ---
 
 <Layout>
