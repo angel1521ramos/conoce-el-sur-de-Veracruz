@@ -1,9 +1,9 @@
 ---
 layout: './PostsLayout.astro'
 etiqueta: Blog
-titulo: Al bote🚓
-imagen: https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/401499955_223978987375388_7598998042059241658_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGuLGaKaMJSrHe-JM-eyrimV2PZXZjmzAZXY9ldmObMBvIwXaLGTThSFAuLsij8GDx44cuFWDVLJ5CHn48qsRjb&_nc_ohc=ev_SYCJ-LAgAX8-Pglo&_nc_oc=AQk5L25Yd93Qia3RTaUpYGZPyTLpCMUA8UOKAgtMoVgv_DhtxwvkWQ6jbl7hKOD65uY&_nc_ht=scontent.fmid1-4.fna&oh=00_AfBkBwQBPsblO4_T0s8xVky3Zl-NfM1faU9d8Bs_Ateq9Q&oe=65588AB6
-descripcion: 🔴Vinculado a proceso como presunto responsable del delito de homicidio doloso calificado Coatzacoalcos, Ver., 13 de noviembre de 2023.- La Fiscalía Regional Coatzacoalcos obtuvo vinculación a proceso en contra de Josué “N” como presunto responsable del delito de homicidio doloso calificado cometido en agravio de la víctima L.A.D.L.S.R. El Juez dictó como medida cautelar prisión preventiva justificada por un año, dentro del proceso penal 922/2023.
-link: https://www.facebook.com/photo?fbid=223978960708724&set=a.175179608921993
+titulo: 🏗️Benito se va a poner guapo🗽
+imagen: https://scontent.fvsa3-1.fna.fbcdn.net/v/t39.30808-6/401848945_224558873984066_6163828149503638304_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGs7Tc-yJphf7YAhe3Z63Ko0Q7kqjPU2sfRDuSqM9TaxxQRpSOCEiI0cHfUMh4Zsd-RJrDOvUAIS4QktqfyExPz&_nc_ohc=zCJ-rMV-Xg4AX-oavMS&_nc_ht=scontent.fvsa3-1.fna&oh=00_AfDhxP8MlwR5U4QHoTyFwj3d3FQ970wdGvTjKde4ADSSaQ&oe=65589EC0
+descripcion: PARQUE REFORMA TENDRÁ UNA NUEVA IMAGEN! Autoridades municipales encabezadas por la Dra. Carmen Medel Palma darán el banderazo de arranque de la rehabilitación del parque Reforma mejor conocido como Los Dos Leones. Ya le hacia falta, o ¿usted que opina?
+link: https://www.facebook.com/permalink.php?story_fbid=pfbid0MuGXoyNyzrJbx5y6GiA2mG3quj9xU6DLMH8xMocMQCSFAdou33567tJ6r1kNZeYYl&id=100092898635950
 redireccion: /posts/post_3
 ---

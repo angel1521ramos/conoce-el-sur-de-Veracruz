@@ -7,33 +7,40 @@ import Menu from "../components/blog/Menu.astro";
 import Title from "../components/blog/Title.astro";
 import Posts from "../components/blog/Posts.astro";
 import Card from "../components/blog/Card.astro";
-import Carrusel from "../components/Carrusel.astro"
-import CarruselImg from "../components/CarruselImg.astro"
+import Jumbotron from "../components/Jumbotron.astro";
 
 const imagen =
-"https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/350975952_514236867474399_3146924486109421848_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFi34o-gocXgFSLl6nWts7HKcCXB6pDowUpwJcHqkOjBTY3PY_GgStCShzt2_SLQsPt0b34_wP9Agioj0-2XfLj&_nc_ohc=0lCe9bQHQWIAX9-mE6m&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDHHwzLPnoAiEBgFguo6oQom62zuFR8c_QFYCnoJfhv8A&oe=6557D9E8",
-link = "https://www.facebook.com/profile.php?id=100092898635950",
-nombre = "página oficial de conoce el sur de Veracruz";
+    "https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/350975952_514236867474399_3146924486109421848_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFi34o-gocXgFSLl6nWts7HKcCXB6pDowUpwJcHqkOjBTY3PY_GgStCShzt2_SLQsPt0b34_wP9Agioj0-2XfLj&_nc_ohc=0lCe9bQHQWIAX9-mE6m&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDHHwzLPnoAiEBgFguo6oQom62zuFR8c_QFYCnoJfhv8A&oe=6557D9E8",
+  link = "https://www.facebook.com/profile.php?id=100092898635950",
+  nombre = "Conoce el sur de veracruz";
 const articulos = await Astro.glob("./posts/*.md");
-const imagenes = await Astro.glob("./images/*.md");
 ---
 
 <Layout>
-  <Navbar imagen={imagen} link={link} nombre={nombre}>
+  <Navbar imagen={imagen} link={"/"} nombre={nombre}>
     <NavOption link={"/"} nombre={"Inicio"} />
     <NavOption link={"/galeria"} nombre={"Galeria"} />
   </Navbar>
   <Menu>
     <Title>
-      <Carrusel>
-        {imagenes.map((x)=>
-        <CarruselImg link={x.frontmatter.link} />)}
-      </Carrusel>
+      <Jumbotron
+        titulo="Veracruz "
+        descripcion="Yo nací con la luna de plata Nací con alma de pirata He nacido rumbero y jarocho Trovador de veras Y me fui lejos de veracruz"
+        link="https://www.facebook.com/profile.php?id=100092898635950"
+        imagen="bg-[url('https://scontent.fvsa3-1.fna.fbcdn.net/v/t39.30808-6/350946429_657243876222210_4503630071008048962_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFSP-N_A8UHZlPRJpEwkuIEVzy2huwnM8JXPLaG7CczwvPFcfHYunb9o1vEqlElXNAmHWsEBEimYNaHUOaBT8h4&_nc_ohc=iLN1G4IHPMAAX8Q8S-1&_nc_ht=scontent.fvsa3-1.fna&oh=00_AfBXCqvutz-C2-tWRxJpfs4vJ8f_9G2CaJpWwPfSWXYImw&oe=65597F7E')]"
+      />
     </Title>
     <Posts>
-      {articulos.map((x) =>
-      <Card etiqueta={x.frontmatter.etiqueta} titulo={x.frontmatter.titulo} descripcion={x.frontmatter.descripcion}
-        link={x.frontmatter.redireccion} />)}
+      {
+        articulos.toReversed().map((x) => (
+          <Card
+            etiqueta={x.frontmatter.etiqueta}
+            titulo={x.frontmatter.titulo}
+            descripcion={x.frontmatter.descripcion}
+            link={x.frontmatter.redireccion}
+          />
+        ))
+      }
     </Posts>
   </Menu>
 
