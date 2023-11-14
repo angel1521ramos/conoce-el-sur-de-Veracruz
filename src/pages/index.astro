@@ -45,34 +45,22 @@ const articulos = [
 <Layout>
   <Navbar
     imagen={"https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/350975952_514236867474399_3146924486109421848_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFi34o-gocXgFSLl6nWts7HKcCXB6pDowUpwJcHqkOjBTY3PY_GgStCShzt2_SLQsPt0b34_wP9Agioj0-2XfLj&_nc_ohc=0lCe9bQHQWIAX9-mE6m&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDHHwzLPnoAiEBgFguo6oQom62zuFR8c_QFYCnoJfhv8A&oe=6557D9E8"}
-    link={"https://www.facebook.com/profile.php?id=100092898635950"}
-    nombre={"página oficial de conoce el sur de Veracruz"}
-  >
+    link={"https://www.facebook.com/profile.php?id=100092898635950"} nombre={"página oficial de conoce el sur de Veracruz"}>
     <NavOption link={"/"} nombre={"Inicio"} />
     <NavOption link={"/galeria"} nombre={"Galeria"} />
   </Navbar>
 
   <Container>
-    <main
-      class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900 antialiased"
-    >
+    <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white antialiased">
       {
-        articulos.map((x) => (
-          <div class="flex justify-between px-32 mx-auto max-w-screen-xl">
-            <Article
-              link={x.link}
-              imagen={x.imagen}
-              titulo={x.titulo}
-              descripcion={x.descripcion}
-            />
-          </div>
-        ))
+      articulos.map((x) => (
+      <div class="flex justify-between sm:px-32 mx-auto max-w-screen-xl">
+        <Article link={x.link} imagen={x.imagen} titulo={x.titulo} descripcion={x.descripcion} />
+      </div>
+      ))
       }
     </main>
   </Container>
 
-  <Footer
-    link={"https://www.facebook.com/profile.php?id=100092898635950"}
-    nombre={"página oficial de conoce el sur de Veracruz"}
-  />
+  <Footer link={"https://www.facebook.com/profile.php?id=100092898635950"} nombre={"página oficial de conoce el sur de Veracruz"} />
 </Layout>
