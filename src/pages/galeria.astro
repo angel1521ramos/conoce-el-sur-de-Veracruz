@@ -8,40 +8,37 @@ import Galery from "../components/Galery.astro";
 import GaleryImg from "../components/GaleryImg.astro";
 
 const imagenes = [
-    {
-        link: "https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/401085519_224091037364183_1954866231995672563_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSTA5W6xwFT0MTDaZ8WG6AVm9zouOVgsZWb3Oi45WCxtuXF9YtEBrDKKsx2xiI_KIyNBCFukIfN0vPnYMmj2kR&_nc_ohc=rQ9dExbpCocAX8HYl-h&_nc_ht=scontent.fmid1-3.fna&oh=00_AfCGTrQrqfToWiAKAbz2qhdPthjdKuVCWmMQOEoHI3zmFw&oe=65578036",
-    },
-    {
-        link: "https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/401499955_223978987375388_7598998042059241658_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGuLGaKaMJSrHe-JM-eyrimV2PZXZjmzAZXY9ldmObMBvIwXaLGTThSFAuLsij8GDx44cuFWDVLJ5CHn48qsRjb&_nc_ohc=ev_SYCJ-LAgAX8-Pglo&_nc_oc=AQk5L25Yd93Qia3RTaUpYGZPyTLpCMUA8UOKAgtMoVgv_DhtxwvkWQ6jbl7hKOD65uY&_nc_ht=scontent.fmid1-4.fna&oh=00_AfBkBwQBPsblO4_T0s8xVky3Zl-NfM1faU9d8Bs_Ateq9Q&oe=65588AB6",
-    },
-    {
-        link: "https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/401842193_223920597381227_2893263105533320242_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFkIH7LD0yKsa3_Unu7KJ0KH6qqlwgNtc8fqqqXCA21z5dui0OREElVrH7q_fz8eRRKkJV67A-2StLn2JNlTDYY&_nc_ohc=eM2o1tI0zBYAX9OM5aq&_nc_ht=scontent.fmid1-3.fna&oh=00_AfC0lThlpeYBAoz2GZhSKpTlq7gcIQueFaSxjYYUdrv-DA&oe=655838AC",
-    },
-    {
-        link: "https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/400807932_223504400756180_7642750596720615715_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHjQ5qwvgeQZnzL5sXbqO5djQ5J0iCEXpONDknSIIRek2Wxg2bkrOo7a43KeFE6HXJgPymQXaZArd4v-zk0nQp8&_nc_ohc=0FIt52pndhMAX_hzi2Z&_nc_ht=scontent.fmid1-4.fna&oh=00_AfA1zdl9J7gcFML5LDQ2ncKEcK9i81gmgujpxekjSqHBKg&oe=655886E3",
-    },
+  {
+    link: "https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/401085519_224091037364183_1954866231995672563_n.jpg?stp=dst-jpg_p180x540&_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSTA5W6xwFT0MTDaZ8WG6AVm9zouOVgsZWb3Oi45WCxtuXF9YtEBrDKKsx2xiI_KIyNBCFukIfN0vPnYMmj2kR&_nc_ohc=rQ9dExbpCocAX8HYl-h&_nc_ht=scontent.fmid1-3.fna&oh=00_AfCGTrQrqfToWiAKAbz2qhdPthjdKuVCWmMQOEoHI3zmFw&oe=65578036",
+  },
+  {
+    link: "https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/401499955_223978987375388_7598998042059241658_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGuLGaKaMJSrHe-JM-eyrimV2PZXZjmzAZXY9ldmObMBvIwXaLGTThSFAuLsij8GDx44cuFWDVLJ5CHn48qsRjb&_nc_ohc=ev_SYCJ-LAgAX8-Pglo&_nc_oc=AQk5L25Yd93Qia3RTaUpYGZPyTLpCMUA8UOKAgtMoVgv_DhtxwvkWQ6jbl7hKOD65uY&_nc_ht=scontent.fmid1-4.fna&oh=00_AfBkBwQBPsblO4_T0s8xVky3Zl-NfM1faU9d8Bs_Ateq9Q&oe=65588AB6",
+  },
+  {
+    link: "https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/401842193_223920597381227_2893263105533320242_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFkIH7LD0yKsa3_Unu7KJ0KH6qqlwgNtc8fqqqXCA21z5dui0OREElVrH7q_fz8eRRKkJV67A-2StLn2JNlTDYY&_nc_ohc=eM2o1tI0zBYAX9OM5aq&_nc_ht=scontent.fmid1-3.fna&oh=00_AfC0lThlpeYBAoz2GZhSKpTlq7gcIQueFaSxjYYUdrv-DA&oe=655838AC",
+  },
+  {
+    link: "https://scontent.fmid1-4.fna.fbcdn.net/v/t39.30808-6/400807932_223504400756180_7642750596720615715_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHjQ5qwvgeQZnzL5sXbqO5djQ5J0iCEXpONDknSIIRek2Wxg2bkrOo7a43KeFE6HXJgPymQXaZArd4v-zk0nQp8&_nc_ohc=0FIt52pndhMAX_hzi2Z&_nc_ht=scontent.fmid1-4.fna&oh=00_AfA1zdl9J7gcFML5LDQ2ncKEcK9i81gmgujpxekjSqHBKg&oe=655886E3",
+  },
 ];
 ---
 
 <Layout>
-    <Navbar
-        imagen={"https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/350975952_514236867474399_3146924486109421848_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFi34o-gocXgFSLl6nWts7HKcCXB6pDowUpwJcHqkOjBTY3PY_GgStCShzt2_SLQsPt0b34_wP9Agioj0-2XfLj&_nc_ohc=0lCe9bQHQWIAX9-mE6m&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDHHwzLPnoAiEBgFguo6oQom62zuFR8c_QFYCnoJfhv8A&oe=6557D9E8"}
-        link={"https://www.facebook.com/profile.php?id=100092898635950"}
-        nombre={"página oficial de conoce el sur de Veracruz"}
-    >
-        <NavOption link={"/conoce-el-sur-de-Veracruz"} nombre={"Inicio"} />
-        <NavOption
-            link={"/conoce-el-sur-de-Veracruz/galeria"}
-            nombre={"Galeria"}
-        />
-    </Navbar>
-    <Container>
-        <Galery>
-            {imagenes.map((x) => <GaleryImg link={x.link} />)}
-        </Galery>
-    </Container>
-    <Footer
-        link={"https://www.facebook.com/profile.php?id=100092898635950"}
-        nombre={"página oficial de conoce el sur de Veracruz"}
-    />
+  <Navbar
+    imagen={"https://scontent.fmid1-3.fna.fbcdn.net/v/t39.30808-6/350975952_514236867474399_3146924486109421848_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFi34o-gocXgFSLl6nWts7HKcCXB6pDowUpwJcHqkOjBTY3PY_GgStCShzt2_SLQsPt0b34_wP9Agioj0-2XfLj&_nc_ohc=0lCe9bQHQWIAX9-mE6m&_nc_ht=scontent.fmid1-3.fna&oh=00_AfDHHwzLPnoAiEBgFguo6oQom62zuFR8c_QFYCnoJfhv8A&oe=6557D9E8"}
+    link={"https://www.facebook.com/profile.php?id=100092898635950"}
+    nombre={"página oficial de conoce el sur de Veracruz"}
+  >
+    <NavOption link={"/"} nombre={"Inicio"} />
+    <NavOption link={"/galeria"} nombre={"Galeria"} />
+  </Navbar>
+  <Container>
+    <Galery>
+      {imagenes.map((x) => <GaleryImg link={x.link} />)}
+    </Galery>
+  </Container>
+  <Footer
+    link={"https://www.facebook.com/profile.php?id=100092898635950"}
+    nombre={"página oficial de conoce el sur de Veracruz"}
+  />
 </Layout>
