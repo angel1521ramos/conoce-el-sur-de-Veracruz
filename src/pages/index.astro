@@ -14,6 +14,7 @@ const imagen =
   link = "https://www.facebook.com/profile.php?id=100092898635950",
   nombre = "Conoce el sur de veracruz";
 const articulos = await Astro.glob("./posts/*.md");
+articulos.reverse();
 ---
 
 <Layout>
@@ -32,7 +33,7 @@ const articulos = await Astro.glob("./posts/*.md");
     </Title>
     <Posts>
       {
-        articulos.toReversed().map((x) => (
+        articulos.map((x) => (
           <Card
             etiqueta={x.frontmatter.etiqueta}
             titulo={x.frontmatter.titulo}
